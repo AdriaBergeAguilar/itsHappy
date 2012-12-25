@@ -4,5 +4,12 @@
     <string name="app_name">ItsHappy</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="applicationId">173275152685943</string>
+    <string name="txtNom">Nombre</string>
+    <string name="txtTelefon">Telefono</string>
+    <string name="txtIdioma">Idioma</string>
+    <string name="txtCiudad">Ciudad</string>
+    <string name="txtImagen">Tamaño máximo del fichero 500K</string>
+    <string name="title_activity_edit_perfil">EditPerfil</string>
 
 </resources>
