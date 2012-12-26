@@ -32,15 +32,25 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:text="Button" />
-
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+        	android:layout_marginRight="5dip"
+        	android:textColor="@android:color/white"
+            android:background="@drawable/com_itshappy_button"
+            android:text="@string/Cancelar" />
+         
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+        	android:layout_marginRight="5dip"
+        	android:layout_marginBottom="5dip"
+        	android:textColor="@android:color/white"
             android:layout_alignParentTop="true"
-            android:text="Button" />
+            android:background="@drawable/com_itshappy_button"
+            android:text="@string/Guardar" />
 
     </RelativeLayout>
 

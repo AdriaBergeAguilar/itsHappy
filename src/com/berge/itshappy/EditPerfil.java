@@ -38,9 +38,7 @@ public class EditPerfil extends FragmentActivity {
         Button Aceptar = (Button)findViewById(R.id.button2);
         
         Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-        
-        
-        Cancelar.setWidth(display.getWidth()/2);
-        Aceptar.setWidth(display.getWidth()/2);
+        Cancelar.setWidth((display.getWidth()/2)-10);
+        Aceptar.setWidth((display.getWidth()/2)-5);
     }
 }
