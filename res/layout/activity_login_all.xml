@@ -76,4 +76,12 @@
 	    android:inputType="textEmailAddress"
 	    android:hint="@string/usuario" />
 
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/logoitshappy" />
+
 </RelativeLayout>
