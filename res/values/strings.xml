@@ -24,8 +24,7 @@
 	<string name="titlemodcuenta">Eliminar cuenta</string>
 	
 	<string name="txtCuenta">Cuenta actual</string>
-	<string name="txtquiero">Quiero ser Afiliado</string>
-	<string name="txtcodigo">Código de Afiliado</string>
+	<string name="txtquiero">Ser afiliado</string>
 	<string name="txtkeyactual">Actual</string>
 	<string name="txtkeynew">Nueva</string>
 	<string name="txtkeyconfirm">Confirmar</string>

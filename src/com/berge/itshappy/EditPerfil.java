@@ -4,9 +4,13 @@ import com.berge.itshappy.fragments.AdapterFragmentDadesPersonals;
 import com.viewpagerindicator.LinePageIndicator;
 import com.viewpagerindicator.PageIndicator;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.view.Display;
+import android.view.WindowManager;
+import android.widget.Button;
 
 public class EditPerfil extends FragmentActivity {
     
@@ -29,5 +33,14 @@ public class EditPerfil extends FragmentActivity {
 
         mIndicator = (LinePageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(mPager);
+        
+        Button Cancelar = (Button)findViewById(R.id.button1);
+        Button Aceptar = (Button)findViewById(R.id.button2);
+        
+        Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+        
+        
+        Cancelar.setWidth(display.getWidth()/2);
+        Aceptar.setWidth(display.getWidth()/2);
     }
 }
