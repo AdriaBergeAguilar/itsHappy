@@ -3,13 +3,77 @@
     xmlns:facebook="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    
+
+	<Button
+	    android:id="@+id/btnRegistrar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="14dp"
+	    android:text="@string/registrarme" />
+
 	<com.facebook.widget.LoginButton
-                android:id="@+id/login_facebook_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                facebook:confirm_logout="false"
-                facebook:fetch_user_info="true">
-    </com.facebook.widget.LoginButton>
+	    android:id="@+id/login_facebook_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/lineaHorizontal"
+	    android:layout_alignLeft="@+id/button1"
+	    android:layout_marginBottom="18dp"
+	    facebook:confirm_logout="false"
+	    facebook:fetch_user_info="true" />
+
+	<Button
+	    android:id="@+id/button1"
+	    style="@style/com_itshappy_loginview_style"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/login_facebook_button"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="16dp"
+	    android:text="@string/login"
+	    android:textColor="@color/com_facebook_loginview_text_color" />
+
+	<TextView
+	    android:id="@+id/txtOlvidarContrasenya"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/button1"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/olvidar"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<View
+	    android:id="@+id/lineaHorizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="3dip"
+	    android:layout_above="@+id/btnRegistrar"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="14dp"
+	    android:background="#55444444"
+	    android:visibility="visible" />
+
+	<EditText
+	    android:id="@+id/edtContrasenya"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/txtOlvidarContrasenya"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="24dp"
+	    android:ems="10"
+	    android:inputType="textPassword"
+	    android:hint="@string/contrasenya" >	    
+	</EditText>
+
+	<EditText
+	    android:id="@+id/edtUsuario"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/edtContrasenya"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="15dp"
+	    android:ems="10"
+	    android:inputType="textEmailAddress"
+	    android:hint="@string/usuario" />
+
 </RelativeLayout>

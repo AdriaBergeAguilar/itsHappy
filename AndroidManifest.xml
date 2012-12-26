@@ -28,6 +28,11 @@
         </activity>
         <activity
             android:name="com.berge.itshappy.LoginAll" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         
         <!-- el tema es per tal de fer el efecte de la pagina en la que estas -->

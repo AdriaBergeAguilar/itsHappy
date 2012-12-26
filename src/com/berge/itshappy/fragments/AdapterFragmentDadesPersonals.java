@@ -7,7 +7,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.viewpagerindicator.IconPagerAdapter;
 
 public class AdapterFragmentDadesPersonals extends FragmentPagerAdapter implements IconPagerAdapter {
-    protected static final Fragment[] CONTENT = new Fragment[] { new DadesPersonals(),new DadesPersonalsImatge() };
+    protected static final Fragment[] CONTENT = new Fragment[] { 
+    	new DadesPersonals(),new DadesPersonalsImatge(),new DadesPersonalsContrasenya(),
+    	new DadesPersonalsOtros()};
     
     public AdapterFragmentDadesPersonals(FragmentManager fm) {
         super(fm);
