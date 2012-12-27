@@ -6,25 +6,17 @@
 
 	<Button
 	    android:id="@+id/btnRegistrar"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
+	    android:layout_width="120dip"
+	    android:layout_height="40dip"
+	    android:textColor="@android:color/white"
 	    android:layout_alignParentBottom="true"
 	    android:layout_centerHorizontal="true"
 	    android:layout_marginBottom="14dp"
+	    android:background="@drawable/com_itshappy_button"
 	    android:text="@string/registrarme" />
 
-	<com.facebook.widget.LoginButton
-	    android:id="@+id/login_facebook_button"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_above="@+id/lineaHorizontal"
-	    android:layout_alignLeft="@+id/button1"
-	    android:layout_marginBottom="18dp"
-	    facebook:confirm_logout="false"
-	    facebook:fetch_user_info="true" />
-
 	<Button
-	    android:id="@+id/button1"
+	    android:id="@+id/btnLoginItsHappy"
 	    style="@style/com_itshappy_loginview_style"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
@@ -33,15 +25,6 @@
 	    android:layout_marginBottom="16dp"
 	    android:text="@string/login"
 	    android:textColor="@color/com_facebook_loginview_text_color" />
-
-	<TextView
-	    android:id="@+id/txtOlvidarContrasenya"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_above="@+id/button1"
-	    android:layout_centerHorizontal="true"
-	    android:text="@string/olvidar"
-	    android:textAppearance="?android:attr/textAppearanceSmall" />
 
 	<View
 	    android:id="@+id/lineaHorizontal"
@@ -53,29 +36,6 @@
 	    android:background="#55444444"
 	    android:visibility="visible" />
 
-	<EditText
-	    android:id="@+id/edtContrasenya"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_above="@+id/txtOlvidarContrasenya"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginBottom="24dp"
-	    android:ems="10"
-	    android:inputType="textPassword"
-	    android:hint="@string/contrasenya" >	    
-	</EditText>
-
-	<EditText
-	    android:id="@+id/edtUsuario"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_above="@+id/edtContrasenya"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginBottom="15dp"
-	    android:ems="10"
-	    android:inputType="textEmailAddress"
-	    android:hint="@string/usuario" />
-
 	<ImageView
 	    android:id="@+id/imageView1"
 	    android:layout_width="wrap_content"
@@ -83,5 +43,49 @@
 	    android:layout_alignParentTop="true"
 	    android:layout_centerHorizontal="true"
 	    android:src="@drawable/logoitshappy" />
+
+	<com.facebook.widget.LoginButton
+	    android:id="@+id/login_facebook_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/lineaHorizontal"
+	    android:layout_alignLeft="@+id/btnLoginItsHappy"
+	    android:layout_marginBottom="21dp"
+	    facebook:confirm_logout="false"
+	    facebook:fetch_user_info="true" />
+
+	<TextView
+	    android:id="@+id/txtOlvidarContrasenya"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/btnLoginItsHappy"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="24dp"
+	    android:text="@string/olvidar"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<EditText
+	    android:id="@+id/edtContrasenya"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/txtOlvidarContrasenya"
+	    android:layout_centerHorizontal="true"
+	    android:ems="10"
+	    android:hint="@string/contrasenya"
+	    android:inputType="textPassword" />
+
+	<EditText
+	    android:id="@+id/edtUsuario"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/edtContrasenya"
+	    android:layout_alignLeft="@+id/edtContrasenya"
+	    android:layout_marginBottom="14dp"
+	    android:ems="10"
+	    android:hint="@string/usuario"
+	    android:inputType="textEmailAddress" >
+
+	    <requestFocus />
+	</EditText>
 
 </RelativeLayout>

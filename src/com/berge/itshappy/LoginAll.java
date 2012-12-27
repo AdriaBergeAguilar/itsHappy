@@ -12,6 +12,9 @@ import com.facebook.widget.LoginButton;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class LoginAll extends Activity {
 	private List<String> PERMISSIONS = new ArrayList<String>();
@@ -41,6 +44,13 @@ public class LoginAll extends Activity {
             }
         });  
 		
+		Button loginItsHappy = (Button)findViewById(R.id.btnLoginItsHappy);
+		loginItsHappy.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				startActivity(new Intent(LoginAll.this,MainActivity.class));				
+			}
+		});
 	}
 
 }

@@ -20,7 +20,7 @@ public class MenuConstruct {
 			ImageView item = new ImageView(activity);
 			item.setImageResource(imagenes[i]);
 
-			arcMenu.addItem(item, new ListenerMenuCircle(activity));// Add a menu item
+			arcMenu.addItem(item, new ListenerMenuCircle(activity,i));// Add a menu item
 		}
 	}
 }

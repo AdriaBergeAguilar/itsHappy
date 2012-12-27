@@ -20,20 +20,13 @@
         <activity
             android:name="com.berge.itshappy.MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <activity android:name="com.berge.itshappy.LoginAll" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.berge.itshappy.LoginAll" >
-        </activity>
-        
         <!-- el tema es per tal de fer el efecte de la pagina en la que estas -->
-        <activity 
+        <activity
             android:name="com.berge.itshappy.SplashActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,11 +37,11 @@
             android:name="com.berge.itshappy.EditPerfil"
             android:label="@string/title_activity_edit_perfil"
             android:theme="@style/StyledIndicators" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.berge.itshappy.LlistesActivity"
+            android:label="@string/title_activity_llistes"
+            android:theme="@style/StyledIndicators" >
         </activity>
 
         <!-- Esto es necesario para hacer login en Facebook -->
@@ -59,7 +52,9 @@
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/applicationId" />    
+            android:value="@string/applicationId" />
+
+        
     </application>
 
 </manifest>

@@ -1,6 +1,6 @@
 package com.berge.itshappy;
 
-import com.berge.itshappy.fragments.AdapterFragmentDadesPersonals;
+import com.berge.itshappy.fragments.dadespersonals.AdapterFragmentDadesPersonals;
 import com.viewpagerindicator.LinePageIndicator;
 import com.viewpagerindicator.PageIndicator;
 

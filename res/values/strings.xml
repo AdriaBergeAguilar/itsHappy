@@ -13,26 +13,30 @@
     <string name="title_activity_edit_perfil">EditPerfil</string>
     <string name="login">Iniciar Sesión</string>
     <string name="olvidar">He olvidado la contraseña</string>
-	<string name="registrarme">Registrarme</string>
-	<string name="usuario">Usuario</string>
-	<string name="contrasenya">Contraseña</string>
-	<string name="Cancelar">Cancelar</string>
-	<string name="Guardar">Guardar</string>
-	
-	<string name="titlemodDatos">Cambiar datos</string>
-	<string name="titlemodcontrasenya">Cambiar contraseña</string>
-	<string name="titlemodimagen">Cambiar imagen del perfil</string>
-	<string name="titlemodafiliacion">Cambiar afiliación</string>
-	<string name="titlemodcuenta">Eliminar cuenta</string>
-	
-	<string name="txtCuenta">Cuenta actual</string>
-	<string name="txtquiero">Ser afiliado</string>
-	<string name="txtkeyactual">Actual</string>
-	<string name="txtkeynew">Nueva</string>
-	<string name="txtkeyconfirm">Confirmar</string>
-	<string name="btnCambiar">Cambiar</string>
-	<string-array name="idiomas">
-	    <item >Español</item>
-	    <item >Catalan</item>
-	</string-array>
+    <string name="registrarme">Registrarme</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasenya">Contraseña</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="Guardar">Guardar</string>
+    <string name="titlemodDatos">Cambiar datos</string>
+    <string name="titlemodcontrasenya">Cambiar contraseña</string>
+    <string name="titlemodimagen">Cambiar imagen del perfil</string>
+    <string name="titlemodafiliacion">Cambiar afiliación</string>
+    <string name="titlemodcuenta">Eliminar cuenta</string>
+    <string name="txtCuenta">Cuenta actual</string>
+    <string name="txtquiero">Ser afiliado</string>
+    <string name="txtkeyactual">Actual</string>
+    <string name="txtkeynew">Nueva</string>
+    <string name="txtkeyconfirm">Confirmar</string>
+    <string name="btnCambiar">Cambiar</string>
+	<string name="listAmigos">Listas que sigo</string>
+	<string name="listasMias">Mis listas</string>
+	<string name="ReservasEchas">Reservas</string>
+    <string-array name="idiomas">
+        <item>Español</item>
+        <item>Catalan</item>
+    </string-array>
+
+    <string name="title_activity_llistes">LlistesActivity</string>
+
 </resources>
